@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* font */
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/fonts/NotoSansKR-Thin.woff2) format('woff2'), url(/fonts/NotoSansKR-Thin.woff) format('woff'), url(/fonts/NotoSansKR-Thin.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/NotoSansKR-Light.woff2) format('woff2'), url(/fonts/NotoSansKR-Light.woff) format('woff'), url(/fonts/NotoSansKR-Light.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/NotoSansKR-Regular.woff2) format('woff2'), url(/fonts/NotoSansKR-Regular.woff) format('woff'), url(/fonts/NotoSansKR-Regular.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/NotoSansKR-Medium.woff2) format('woff2'), url(/fonts/NotoSansKR-Medium.woff) format('woff'), url(/fonts/NotoSansKR-Medium.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/NotoSansKR-Bold.woff2) format('woff2'), url(/fonts/NotoSansKR-Bold.woff) format('woff'), url(/fonts/NotoSansKR-Bold.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/fonts/NotoSansKR-Black.woff2) format('woff2'), url(/fonts/NotoSansKR-Black.woff) format('woff'), url(/fonts/NotoSansKR-Black.otf) format('opentype');
+  }
+
+
+  /* reset-css */
+
+  *{margin: 0;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  input {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 10px 6px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button{-webkit-appearance: none; border: none;}
+
+  select{width: 100%; padding: 10px 8px; border: 1px solid #e5e5e5;border-radius: 5px;}
+
+
+/* button */
+
+.btn-square{width: 100%; padding: 10px 0; background-color: #3554DB; border-radius: 5px; color: #fff;font-size: 18px;}
+
+
+
+  /* toggle */
+
+.toggle {
+  display: inline-block;
+  position: relative;
+  padding-left: 100px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.toggle input:checked~.control {
+  background-color: #3554DB;
+}
+
+.toggle input:checked~.control:after {
+  left: 24px;
+}
+
+.toggle .control {
+  position: absolute;
+  padding: .5em;
+  top: -.5em;
+  right: 0;
+  height: 27px;
+  width: 47px;
+  border-radius: 25px;
+  background-color: #dadada;
+  -webkit-transition: background-color 0.15s ease-in;
+  transition: background-color 0.15s ease-in;
+}
+
+.toggle .control:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 19px;
+  height: 19px;
+  border-radius: 25px;
+  background: white;
+  -webkit-transition: left 0.15s ease-in;
+  transition: left 0.15s ease-in;
+}
+
+/* layout */
+
+.wrap-page{width: 100%; padding: 20px;}
+h1{font-size: 36px; color: #3554DB;}
+
+
+
+/* login */
+.login-tit{text-align: center;padding: 20px 0;}
+.wrap-login select, .wrap-login input[type=text]{margin-bottom: 10px; font-size: 16px;}
+
