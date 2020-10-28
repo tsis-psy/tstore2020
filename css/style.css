@@ -2,39 +2,52 @@
 
 /* reset-css */
 
-  *{margin: 0;
-    padding: 0;
-    color: #000;
-    text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
 
-  input {
-    -webkit-appearance: none;
-    border-radius: 5px;
-    border: 1px solid #e5e5e5;
-    width: 100%;
-    padding: 10px 8px;
-  }
+input {
+  -webkit-appearance: none;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  padding: 10px 8px;
+}
 
-  input:focus {
-    outline: none;
-  }
+input:focus {
+  outline: none;
+}
 
-  button{-webkit-appearance: none; border: none;}
+button {
+  -webkit-appearance: none;
+  border: none;
+}
 
-  select{width: 100%; padding: 10px 8px; border: 1px solid #e5e5e5;border-radius: 5px;}
-
+select {
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
 
 /* button */
 
-.btn-square{width: 100%; padding: 10px 0; background-color: #3554DB; border-radius: 5px; color: #fff;font-size: 18px;}
+.btn-square {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #3554db;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+}
 
-
-
-  /* toggle */
+/* toggle */
 
 .toggle {
   display: inline-block;
@@ -55,18 +68,18 @@
   width: 0;
 }
 
-.toggle input:checked~.control {
-  background-color: #3554DB;
+.toggle input:checked ~ .control {
+  background-color: #3554db;
 }
 
-.toggle input:checked~.control:after {
+.toggle input:checked ~ .control:after {
   left: 17px;
 }
 
 .toggle .control {
   position: absolute;
-  padding: .5em;
-  top: -.25em;
+  padding: 0.5em;
+  top: -0.25em;
   right: 0;
   height: 18px;
   width: 36px;
@@ -89,22 +102,139 @@
   transition: left 0.15s ease-in;
 }
 
-/* layout */
+/* common */
 
-.wrap-page{width: 100%; padding: 20px;}
-h1{font-size: 32px;font-family: 'Open Sans'; color: #3554DB;}
+.wrap-page {
+  width: 100%;
+  padding: 20px;
+}
+h1 {
+  font-size: 32px;
+  font-family: "Open Sans";
+  color: #3554db;
+}
 
+h2 {
+  font-size: 18px;
+  padding: 10px 0;
+}
 
+.wrap-tit {
+  width: 100%;
+  padding: 40px 23px 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  background-color: #fff;
+  z-index: 998;
+}
+
+.wrap-content {
+  position: relative;
+  top: 83px;
+}
+
+.wrap-menu {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 16px 0 24px;
+  z-index: 999;
+}
 
 /* login */
-.login-tit{text-align: center;padding: 20px 0 36px ;font-size: 36px;}
-.txt-info{font-size: 14px; text-align: center;padding-bottom: 27px;}
-.wrap-login select, .wrap-login input{margin-bottom: 10px; font-size: 16px;}
-.auto-login{text-align: right; padding: 10px 0 20px;}
-
+.login-tit {
+  text-align: center;
+  padding: 20px 0 36px;
+  font-size: 36px;
+}
+.txt-info {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 27px;
+}
+.wrap-login select,
+.wrap-login input {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.auto-login {
+  text-align: right;
+  padding: 10px 0 20px;
+}
 
 /* index */
-.tit-blue{width: 100%; padding: 20px 0;}
-.ban{width: 100%;padding-bottom: 100%; background-color: #eee; border-radius:15px; overflow: hidden;position: relative;}
-.ban img{position: absolute; width:100%}
 
+.ban {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #eee;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+.ban img {
+  position: absolute;
+  width: 100%;
+}
+.list-header {
+  position: relative;
+}
+.list-header h2 {
+  display: inline-block;
+}
+.sort {
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.sort span {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.sort span.on {
+  color: #5e7cfe;
+}
+
+.applist {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.applist span {
+  padding-right: 14px;
+}
+
+.applist .list-btn {
+  color: #3554db;
+  padding: 4px;
+  border: 1px solid #3554db;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 70px;
+  text-align: center;
+}
+
+.applist .list-txt {
+  width: 56%;
+  align-self: flex-start;
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
+.applist .list-txt p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
