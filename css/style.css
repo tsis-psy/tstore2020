@@ -18,6 +18,7 @@ input {
   border: 1px solid #e5e5e5;
   width: 100%;
   padding: 10px 8px;
+  font-size: 16px;
 }
 
 input:focus {
@@ -34,8 +35,15 @@ select {
   padding: 10px 8px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
+  -webkit-appearance: none;
+  font-size: 16px;
+  background-image: url(/img/ic_select.svg);
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
 }
-
+select:focus {
+  outline: none;
+}
 /* button */
 
 .btn-square {
@@ -121,19 +129,19 @@ h2 {
 
 .wrap-tit {
   width: 100%;
-  padding: 40px 23px 20px;
+  padding: 30px 23px 20px;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.9);
   z-index: 998;
 }
 
 .wrap-content {
   position: relative;
   top: 83px;
+  padding-bottom: 88px;
 }
 
 .wrap-menu {
@@ -201,9 +209,11 @@ h2 {
 .sort span {
   font-size: 14px;
   padding-left: 10px;
+  letter-spacing: -0.6px;
 }
 .sort span.on {
   color: #5e7cfe;
+  font-weight: bold;
 }
 
 .applist {
@@ -217,24 +227,100 @@ h2 {
   padding-right: 14px;
 }
 
-.applist .list-btn {
+.applist .list-icon img {
+  width: 64px;
+}
+
+.applist .list-btn-open {
+  color: #50555c;
+  padding: 4px 3px;
+  /* border: 1px solid #50555c; */
+  background-color: #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  font-size: 15px;
+}
+.applist .list-btn-install {
+  color: #fff;
+  padding: 4px 3px;
+  background-color: #3554db;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  font-size: 15px;
+}
+.applist .list-btn-update {
   color: #3554db;
-  padding: 4px;
+  padding: 3px;
   border: 1px solid #3554db;
   border-radius: 20px;
   box-sizing: border-box;
-  width: 70px;
+  width: 80px;
   text-align: center;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  font-size: 15px;
 }
 
 .applist .list-txt {
-  width: 56%;
+  width: 52%;
   align-self: flex-start;
-  letter-spacing: -1px;
-  font-size: 14px;
+}
+.applist .list-txt p {
+  width: 100%;
+  letter-spacing: -0.6px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #50555c;
 }
 
 .applist .list-txt p:first-child {
   font-weight: bold;
   font-size: 18px;
+  color: #333;
+  line-height: 18px;
+}
+
+.applist .list-txt p:last-child {
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+/* 검색 */
+
+.wrap-srch {
+  margin-bottom: 20px;
+  position: fixed;
+  right: 20px;
+  left: 20px;
+  background-color: #fff;
+}
+
+.wrap-srch form input {
+  position: relative;
+  width: 100%;
+}
+.wrap-srch form button {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  background: none;
+}
+
+.wrap-result {
+  position: fixed;
+  width: 100%;
+  padding: 0 40px 50px 0;
+  top: 170px;
+  height: 70%;
+  overflow-y: scroll;
 }
