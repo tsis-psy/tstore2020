@@ -127,7 +127,8 @@ h2 {
   padding: 10px 0;
 }
 
-.wrap-tit {
+.wrap-tit,
+.wrap-back {
   width: 100%;
   padding: 30px 23px 20px;
   position: fixed;
@@ -138,9 +139,19 @@ h2 {
   z-index: 998;
 }
 
+.wrap-back button {
+  background: none;
+}
+
 .wrap-content {
   position: relative;
   top: 83px;
+  padding-bottom: 88px;
+}
+
+.wrap-detail {
+  position: relative;
+  top: 63px;
   padding-bottom: 88px;
 }
 
@@ -323,4 +334,57 @@ h2 {
   top: 170px;
   height: 70%;
   overflow-y: scroll;
+}
+
+.wrap-noresult {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+.wrap-noresult p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0 -70px;
+  color: #333;
+}
+
+/* 공지 */
+
+.wrap-notice ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #f4f4f4;
+  letter-spacing: -0.5px;
+}
+
+.wrap-notice ul li:first-child {
+  padding-top: 0;
+}
+
+.wrap-notice .notice-date,
+.wrap-detail .notice-date {
+  font-size: 14px;
+  color: #979797;
+  padding-bottom: 6px;
+  font-family: "noto sans";
+}
+
+.txt-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
+
+.txt-header .notice-tit {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.txt-content {
+  padding: 30px 0;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.txt-content p {
+  color: #50555c;
 }

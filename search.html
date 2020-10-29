@@ -20,7 +20,14 @@
                     <button><img src="/img/btn_search.svg"></button>
                 </form>
             </div>
-            <div class="wrap-result">
+            <!-- 검색결과없음 -->
+            <div class="wrap-noresult" style="display: none;">
+                <p>검색결과가 없습니다.</p>
+            </div>
+            <!-- end검색결과없음 -->
+            
+            <!-- 검색결과리스트 -->
+            <div class="wrap-result" style="display: none;">
                 <div class="list-content">
                     <div class="applist">
                         <span class="list-icon"><img src="/img/list_icon.png"></span>
@@ -97,6 +104,7 @@
                     
                 </div>
             </div>
+            <!-- end검색결과리스트 -->
         </div>
         <div class="wrap-menu">
             <a href="/myapp.html"><img src="/img/myapp.svg"></a>
