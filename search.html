@@ -14,12 +14,15 @@
             <h1>검색</h1>
         </div>
         <div class="wrap-content">
-            <div class="wrap-srch">
+            <!-- 검색창(항상노출) -->
+            <div class="wrap-srch" >
                 <form>
                     <input type="search" placeholder="검색어를 입력하세요">
-                    <button><img src="/img/btn_search.svg"></button>
+                    <button></button>
                 </form>
             </div>
+            <!-- end검색창(항상노출) -->
+            
             <!-- 검색결과없음 -->
             <div class="wrap-noresult" style="display: none;">
                 <p>검색결과가 없습니다.</p>
@@ -107,11 +110,11 @@
             <!-- end검색결과리스트 -->
         </div>
         <div class="wrap-menu">
-            <a href="/myapp.html"><img src="/img/myapp.svg"></a>
-            <a href="/setting.html"><img src="/img/setting.svg"></a>
-            <a href="/index.html"><img src="/img/apps.svg"></a>
-            <a href="/notice.html"><img src="/img/notice.svg"></a>
-            <a href="/search.html"><img src="/img/search_on.svg"></a>
+            <a href="/myapp.html" class="menu-myapp"></a>
+            <a href="/setting.html" class="menu-setting"></a>
+            <a href="/index.html" class="menu-apps"></a>
+            <a href="/notice.html" class="menu-notice"></a>
+            <a href="/search.html" class="menu-search on"></a>
         </div>
     </div>
 </body>
