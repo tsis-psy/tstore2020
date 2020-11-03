@@ -37,7 +37,7 @@ select {
   border-radius: 5px;
   -webkit-appearance: none;
   font-size: 16px;
-  background-image: url(/img/ic_select.svg);
+  background-image: url(../img/ic_select.svg);
   background-repeat: no-repeat;
   background-position: 96% 50%;
 }
@@ -150,7 +150,7 @@ h2 {
 .wrap-back a {
   width: 24px;
   height: 24px;
-  background-image: url(/img/btn_back.svg);
+  background-image: url(../img/btn_back.svg);
   background-repeat: no-repeat;
   background-position: 0% 50%;
   display: inline-block;
@@ -207,35 +207,35 @@ h2 {
   height: 32px;
 }
 .wrap-menu a.menu-myapp {
-  background-image: url(/img/myapp.svg);
+  background-image: url(../img/myapp.svg);
 }
 .wrap-menu a.menu-setting {
-  background-image: url(/img/setting.svg);
+  background-image: url(../img/setting.svg);
 }
 .wrap-menu a.menu-apps {
-  background-image: url(/img/apps.svg);
+  background-image: url(../img/apps.svg);
 }
 .wrap-menu a.menu-notice {
-  background-image: url(/img/notice.svg);
+  background-image: url(../img/notice.svg);
 }
 .wrap-menu a.menu-search {
-  background-image: url(/img/search.svg);
+  background-image: url(../img/search.svg);
 }
 
 .wrap-menu a.menu-myapp.on {
-  background-image: url(/img/myapp_on.svg);
+  background-image: url(../img/myapp_on.svg);
 }
 .wrap-menu a.menu-setting.on {
-  background-image: url(/img/setting_on.svg);
+  background-image: url(../img/setting_on.svg);
 }
 .wrap-menu a.menu-apps.on {
-  background-image: url(/img/apps_on.svg);
+  background-image: url(../img/apps_on.svg);
 }
 .wrap-menu a.menu-notice.on {
-  background-image: url(/img/notice_on.svg);
+  background-image: url(../img/notice_on.svg);
 }
 .wrap-menu a.menu-search.on {
-  background-image: url(/img/search_on.svg);
+  background-image: url(../img/search_on.svg);
 }
 /* index */
 
@@ -377,7 +377,7 @@ button.list-btn-update,
   position: absolute;
   top: 12px;
   right: 10px;
-  background-image: url(/img/btn_search.svg);
+  background-image: url(../img/btn_search.svg);
   background-color: transparent;
   width: 22px;
   height: 22px;
@@ -492,7 +492,7 @@ button.list-btn-update,
   width: 14px;
   height: 14px;
   display: inline-block;
-  background-image: url(/img/ic_star_blue.svg);
+  background-image: url(../img/ic_star_blue.svg);
   background-size: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -502,14 +502,14 @@ button.list-btn-update,
   height: 14px;
   display: inline-block;
   background-size: 14px 14px;
-  background-image: url(/img/ic_star_gray.svg);
+  background-image: url(../img/ic_star_gray.svg);
   background-repeat: no-repeat;
 }
 
 .down {
   display: inline-block;
   width: 42px;
-  background-image: url(/img/ic_down.svg);
+  background-image: url(../img/ic_down.svg);
   background-repeat: no-repeat;
   background-position: 0 65%;
   text-align: right;
@@ -605,14 +605,14 @@ button.list-btn-update,
 .wrap-review .rating span.blank {
   width: 30px;
   height: 30px;
-  background-image: url(/img/star-blank.svg);
+  background-image: url(../img/star-blank.svg);
   display: inline-block;
   background-repeat: no-repeat;
 }
 .wrap-review .rating span.fill {
   width: 30px;
   height: 30px;
-  background-image: url(/img/star-blue.svg);
+  background-image: url(../img/star-blue.svg);
   display: inline-block;
   background-repeat: no-repeat;
 }
