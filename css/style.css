@@ -251,7 +251,9 @@ h2 {
 .ban img {
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
+
 .list-header {
   position: relative;
 }
@@ -295,7 +297,6 @@ h2 {
 button.list-btn-open {
   color: #50555c;
   padding: 4px 3px;
-  /* border: 1px solid #50555c; */
   background-color: #eee;
   border-radius: 20px;
   box-sizing: border-box;
@@ -324,6 +325,7 @@ button.list-btn-update,
   color: #3554db;
   padding: 3px;
   border: 1px solid #3554db;
+  background-color: #fff;
   border-radius: 20px;
   box-sizing: border-box;
   width: 80px;
@@ -523,7 +525,6 @@ button.list-btn-update,
 
 .info button {
   margin-top: 8px;
-  background: none;
   display: block;
 }
 
