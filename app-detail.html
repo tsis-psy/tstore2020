@@ -6,6 +6,7 @@
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    
     <title>t-Store</title>
 </head>
 <body>
@@ -54,7 +55,7 @@
         
             <div class="review-header">
                 <h2>리뷰</h2>
-                <a href="review.html"><button class="btn-review">리뷰쓰기</button></a>
+                <button id="myBtn" class="btn-review">리뷰쓰기</button>
             </div>
             <div class="review-list">
                 <div class="review-content">
@@ -80,10 +81,64 @@
                     <span class="gray"></span>
                 </div>
             </div>
-            
-            
+            <div id="myModal" class="wrap-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="wrap-review">
+                        <h3>리뷰 작성하기</h3>
+                        <p>앱에 대한 만족도 만큼 별을 탭해서<br>평가해주세요.</p>
+                        <div class="rating">
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span class="blank"></span>
+                            <span class="blank"></span>
+                            <span class="blank"></span>
+                        </div>
+                        <form>
+                            <textarea placeholder="리뷰 내용을 입력해주세요."></textarea>
+                            <div class="wrap-button">
+                                <button class="cancel">취소</button>
+                                <button class="complete">작성완료</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
+    
+    <script>
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+  document.body.classList.add("stop-scroll");
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  document.body.classList.remove("stop-scroll");
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.classList.remove("stop-scroll");
+  }
+}
+
+    </script>
+
 </body>
 </html>
