@@ -44,6 +44,12 @@ select {
 select:focus {
   outline: none;
 }
+
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* button */
 
 .btn-square {
@@ -163,8 +169,7 @@ h2 {
   margin-top: 83px;
   padding-bottom: 88px;
 }
-.wrap-notice-detail,
-.wrap-review {
+.wrap-notice-detail {
   margin-top: 63px;
   padding-bottom: 88px;
 }
@@ -244,14 +249,51 @@ h2 {
   padding-bottom: 100%;
   background-color: #eee;
   border-radius: 15px;
-  overflow: hidden;
   position: relative;
   margin-bottom: 20px;
-}
-.ban img {
-  position: absolute;
-  width: 100%;
   overflow: hidden;
+}
+
+.ban .slider-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.ban .slider-container.animated {
+  -webkit-transition: left 0.3s ease-in;
+  transition: left 0.3s ease-in;
+}
+
+.ban .slider-container .slide {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.ban .slider-container .slide img {
+  width: 100%;
+}
+
+.pager {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+}
+
+.pager span {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.pager span.active {
+  background-color: #333;
 }
 
 .list-header {
@@ -593,6 +635,47 @@ button.list-btn-update,
 }
 
 /* 리뷰쓰기 */
+.wrap-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  text-align: center;
+}
+
+.wrap-modal:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 40px 20px 10px;
+  border: 1px solid #888;
+  width: 85%;
+  border-radius: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  position: relative;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  line-height: 24px;
+}
 
 .wrap-review h3 {
   font-size: 24px;
@@ -602,6 +685,7 @@ button.list-btn-update,
   font-size: 14px;
   color: #50555c;
   padding: 6px 0 18px;
+  letter-spacing: -0.6px;
 }
 .wrap-review .rating span.blank {
   width: 30px;
@@ -620,7 +704,7 @@ button.list-btn-update,
 .wrap-review textarea {
   width: 100%;
   padding: 16px;
-  height: 40vh;
+  height: 33vh;
   border-radius: 5px;
   font-size: 16px;
   margin-top: 16px;
