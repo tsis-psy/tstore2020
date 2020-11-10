@@ -5,20 +5,26 @@
 * {
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #7b8496;
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
 }
 
+body {
+  background-color: #191f2c;
+}
+
 input {
   -webkit-appearance: none;
   border-radius: 5px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #3a404b;
   width: 100%;
   padding: 10px 8px;
   font-size: 16px;
+  background-color: #191f2c;
+  color: #7b8496;
 }
 
 input:focus {
@@ -33,13 +39,14 @@ button {
 select {
   width: 100%;
   padding: 10px 8px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #3a404b;
   border-radius: 5px;
   -webkit-appearance: none;
   font-size: 16px;
   background-image: url(../img/ic_select.svg);
   background-repeat: no-repeat;
   background-position: 96% 50%;
+  background-color: #191f2c;
 }
 select:focus {
   outline: none;
@@ -55,9 +62,9 @@ select:focus {
 .btn-square {
   width: 100%;
   padding: 12px 0;
-  background-color: #3554db;
+  background-color: #5876e8;
   border-radius: 5px;
-  color: #fff;
+  color: #191f2c;
   font-size: 18px;
 }
 
@@ -83,10 +90,11 @@ select:focus {
 }
 
 .toggle input:checked ~ .control {
-  background-color: #3554db;
+  background-color: rgba(88, 118, 232, 0.4);
 }
 
 .toggle input:checked ~ .control:after {
+  background: #5876e8;
   left: 17px;
 }
 
@@ -98,7 +106,7 @@ select:focus {
   height: 18px;
   width: 36px;
   border-radius: 25px;
-  background-color: #b5c4db;
+  background-color: rgba(181, 196, 219, 0.3);
   -webkit-transition: background-color 0.15s ease-in;
   transition: background-color 0.15s ease-in;
 }
@@ -111,7 +119,7 @@ select:focus {
   width: 16px;
   height: 16px;
   border-radius: 25px;
-  background: white;
+  background: #89909f;
   -webkit-transition: left 0.15s ease-in;
   transition: left 0.15s ease-in;
 }
@@ -133,12 +141,13 @@ select:focus {
 h1 {
   font-size: 32px;
   font-family: "Open Sans";
-  color: #3554db;
+  color: #5876e8;
 }
 
 h2 {
   font-size: 18px;
   padding: 10px 0;
+  color: #fff;
 }
 
 .wrap-tit,
@@ -149,14 +158,14 @@ h2 {
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgb(25, 31, 44, 0.9);
   z-index: 998;
 }
 
 .wrap-back a {
   width: 24px;
   height: 24px;
-  background-image: url(../img/btn_back.svg);
+  background-image: url(../img/btn_back_dark.svg);
   background-repeat: no-repeat;
   background-position: 0% 50%;
   display: inline-block;
@@ -180,8 +189,8 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
-  border-top: 1px solid #eee;
+  background-color: #191f2c;
+  border-top: 1px solid #242b39;
   padding: 16px 0 24px;
   z-index: 999;
 }
@@ -212,35 +221,35 @@ h2 {
   height: 32px;
 }
 .wrap-menu a.menu-myapp {
-  background-image: url(../img/myapp.svg);
+  background-image: url(../img/myapp_dark.svg);
 }
 .wrap-menu a.menu-setting {
-  background-image: url(../img/setting.svg);
+  background-image: url(../img/setting_dark.svg);
 }
 .wrap-menu a.menu-apps {
-  background-image: url(../img/apps.svg);
+  background-image: url(../img/apps_dark.svg);
 }
 .wrap-menu a.menu-notice {
-  background-image: url(../img/notice.svg);
+  background-image: url(../img/notice_dark.svg);
 }
 .wrap-menu a.menu-search {
-  background-image: url(../img/search.svg);
+  background-image: url(../img/search_dark.svg);
 }
 
 .wrap-menu a.menu-myapp.on {
-  background-image: url(../img/myapp_on.svg);
+  background-image: url(../img/myapp_on_dark.svg);
 }
 .wrap-menu a.menu-setting.on {
-  background-image: url(../img/setting_on.svg);
+  background-image: url(../img/setting_on_dark.svg);
 }
 .wrap-menu a.menu-apps.on {
-  background-image: url(../img/apps_on.svg);
+  background-image: url(../img/apps_on_dark.svg);
 }
 .wrap-menu a.menu-notice.on {
-  background-image: url(../img/notice_on.svg);
+  background-image: url(../img/notice_on_dark.svg);
 }
 .wrap-menu a.menu-search.on {
-  background-image: url(../img/search_on.svg);
+  background-image: url(../img/search_on_dark.svg);
 }
 /* index */
 
@@ -293,7 +302,7 @@ h2 {
 }
 
 .pager span.active {
-  background-color: #3554db;
+  background-color: #5876e8;
 }
 
 .list-header {
@@ -337,9 +346,9 @@ h2 {
 
 .applist .list-btn-open,
 button.list-btn-open {
-  color: #50555c;
+  color: #c5cad6;
   padding: 4px 3px;
-  background-color: #eee;
+  background-color: #272d3d;
   border-radius: 20px;
   box-sizing: border-box;
   width: 80px;
@@ -350,9 +359,9 @@ button.list-btn-open {
 }
 .applist .list-btn-install,
 button.list-btn-install {
-  color: #fff;
+  color: #191f2c;
   padding: 4px 3px;
-  background-color: #3554db;
+  background-color: #5876e8;
   border-radius: 20px;
   box-sizing: border-box;
   width: 80px;
@@ -364,10 +373,10 @@ button.list-btn-install {
 .applist .list-btn-update,
 button.list-btn-update,
 .btn-review {
-  color: #3554db;
+  color: #5876e8;
   padding: 3px;
-  border: 1px solid #3554db;
-  background-color: #fff;
+  border: 1px solid #5876e8;
+  background-color: #191f2c;
   border-radius: 20px;
   box-sizing: border-box;
   width: 80px;
@@ -392,15 +401,16 @@ button.list-btn-update,
 }
 
 .applist .list-txt p:first-child {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
-  color: #333;
+  color: #c5cad6;
   line-height: 18px;
 }
 
 .applist .list-txt p:last-child {
   padding-top: 5px;
   font-size: 14px;
+  color: #676f7e;
 }
 
 /* 검색 */
@@ -410,7 +420,6 @@ button.list-btn-update,
   position: fixed;
   right: 20px;
   left: 20px;
-  background-color: #fff;
 }
 
 .wrap-srch form input {
@@ -421,7 +430,7 @@ button.list-btn-update,
   position: absolute;
   top: 12px;
   right: 10px;
-  background-image: url(../img/btn_search.svg);
+  background-image: url(../img/btn_search_dark.svg);
   background-color: transparent;
   width: 22px;
   height: 22px;
@@ -446,14 +455,14 @@ button.list-btn-update,
   left: 50%;
   top: 50%;
   margin: 0 -70px;
-  color: #333;
+  color: #7b8290;
 }
 
 /* 공지 */
 
 .wrap-notice ul li {
   padding: 20px 0;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #242b39;
   letter-spacing: -0.5px;
 }
 
@@ -464,19 +473,21 @@ button.list-btn-update,
 .wrap-notice .notice-date,
 .wrap-notice-detail .notice-date {
   font-size: 14px;
-  color: #979797;
+  color: #7b8496;
   padding-bottom: 6px;
   font-family: "noto sans";
 }
 
 .txt-header {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #373b44;
   padding-bottom: 30px;
 }
 
+.notice-tit,
 .txt-header .notice-tit {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
+  color: #fff;
 }
 
 .txt-content {
@@ -486,7 +497,7 @@ button.list-btn-update,
 }
 
 .txt-content p {
-  color: #50555c;
+  color: #7b8496;
 }
 
 /* 앱상세보기 */
@@ -515,11 +526,12 @@ button.list-btn-update,
   font-weight: bold;
   letter-spacing: -0.5px;
   line-height: 20px;
+  color: #c5cad6;
 }
 
 .appinfo-header .info .subtit {
   font-size: 14px;
-  color: #50555c;
+  color: #7b8290;
   letter-spacing: -0.5px;
   padding: 4px 0 2px;
   text-overflow: ellipsis;
@@ -536,7 +548,7 @@ button.list-btn-update,
   width: 14px;
   height: 14px;
   display: inline-block;
-  background-image: url(../img/ic_star_blue.svg);
+  background-image: url(../img/ic_star_blue_dark.svg);
   background-size: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -546,14 +558,14 @@ button.list-btn-update,
   height: 14px;
   display: inline-block;
   background-size: 14px 14px;
-  background-image: url(../img/ic_star_gray.svg);
+  background-image: url(../img/ic_star_gray_dark.svg);
   background-repeat: no-repeat;
 }
 
 .down {
   display: inline-block;
   width: 42px;
-  background-image: url(../img/ic_down.svg);
+  background-image: url(../img/ic_down_dark.svg);
   background-repeat: no-repeat;
   background-position: 0 65%;
   text-align: right;
@@ -562,7 +574,7 @@ button.list-btn-update,
 .down span {
   font-family: "noto sans";
   letter-spacing: -0.5px;
-  color: #50555c;
+  color: #7b8290;
 }
 
 .info button {
@@ -575,7 +587,7 @@ button.list-btn-update,
   overflow-x: auto;
   min-height: 30vh;
   padding: 20px 0;
-  background-color: #eee;
+  background-color: #232937;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -626,12 +638,12 @@ button.list-btn-update,
   width: 55vw;
   letter-spacing: -0.5px;
   font-size: 15px;
-  color: #50555c;
+  color: #7b8290;
 }
 .review-content .review-date,
 .version-date {
   font-family: "noto sans";
-  color: #50555c;
+  color: #41454f;
 }
 
 /* 리뷰쓰기 */
@@ -644,7 +656,7 @@ button.list-btn-update,
   bottom: 0;
   right: 0;
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
   text-align: center;
 }
 
@@ -656,18 +668,19 @@ button.list-btn-update,
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #191f2c;
   padding: 40px 20px 10px;
-  border: 1px solid #888;
+
   width: 85%;
   border-radius: 15px;
   display: inline-block;
   vertical-align: middle;
   height: auto;
   position: relative;
+  color: #7b8290;
 }
 .close {
-  color: #aaaaaa;
+  color: #676f7e;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -679,25 +692,26 @@ button.list-btn-update,
 
 .wrap-review h3 {
   font-size: 24px;
+  color: #fff;
 }
 
 .wrap-review p {
   font-size: 14px;
-  color: #50555c;
+  color: #7b8290;
   padding: 6px 0 18px;
   letter-spacing: -0.6px;
 }
 .wrap-review .rating span.blank {
   width: 30px;
   height: 30px;
-  background-image: url(../img/star-blank.svg);
+  background-image: url(../img/star-blank_dark.svg);
   display: inline-block;
   background-repeat: no-repeat;
 }
 .wrap-review .rating span.fill {
   width: 30px;
   height: 30px;
-  background-image: url(../img/star-blue.svg);
+  background-image: url(../img/star-blue_dark.svg);
   display: inline-block;
   background-repeat: no-repeat;
 }
@@ -710,7 +724,8 @@ button.list-btn-update,
   margin-top: 16px;
   -webkit-appearance: none;
   outline: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #3a404b;
+  background-color: #191f2c;
 }
 
 .wrap-button {
@@ -725,13 +740,13 @@ button.list-btn-update,
 .wrap-button button.cancel {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: #7b8290;
   background: none;
 }
 .wrap-button button.complete {
   font-size: 18px;
   font-weight: bold;
-  color: #3554db;
+  color: #5876e8;
   background: none;
 }
 
@@ -742,6 +757,7 @@ button.list-btn-update,
 
 .wrap-preview h3 {
   font-size: 24px;
+  color: #fff;
 }
 .bg-preview {
   position: fixed;
@@ -750,7 +766,7 @@ button.list-btn-update,
   top: 150px;
   width: 100%;
   min-height: 60vh;
-  background-color: #eee;
+  background-color: #232937;
   overflow-x: auto;
   display: flex;
   padding: 30px 20px;
@@ -772,7 +788,7 @@ h4 {
 }
 .profile {
   width: 100%;
-  background-color: #3554db;
+  background-color: #5876e8;
   border-radius: 15px;
   padding: 20px;
   position: relative;
@@ -791,7 +807,7 @@ h4 {
 .profile button {
   background: none;
   font-size: 16px;
-  color: #fff;
+  color: #191f2c;
   display: block;
   right: 0;
   top: -8;
@@ -823,14 +839,14 @@ h4 {
 
 .basic {
   width: 100%;
-  background-color: #f2f5ff;
+  background-color: #232937;
   padding: 20px;
   border-radius: 15px;
   margin-top: 14px;
 }
 .basic h4,
 .version .tit {
-  color: #3554db;
+  color: #5876e8;
 }
 
 .wrap-both {
@@ -842,7 +858,7 @@ h4 {
 .version {
   margin-top: 14px;
   width: 100%;
-  background-color: #f2f5ff;
+  background-color: #232937;
   padding: 12px 20px;
   border-radius: 15px;
 }
@@ -852,12 +868,12 @@ h4 {
 .qna {
   margin-top: 14px;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #232937;
   padding: 20px;
   border-radius: 15px;
 }
 .qna h4 {
-  color: #9d9d9d;
+  color: #5876e8;
 }
 
 /*--- IPHONE 5 - SE ---*/
@@ -912,7 +928,7 @@ h4 {
   button.list-btn-install {
     color: #fff;
     padding: 4px 3px;
-    background-color: #3554db;
+    background-color: #5876e8;
     border-radius: 20px;
     box-sizing: border-box;
     width: 72px;
@@ -924,9 +940,9 @@ h4 {
   .applist .list-btn-update,
   button.list-btn-update,
   .btn-review {
-    color: #3554db;
+    color: #5876e8;
     padding: 3px;
-    border: 1px solid #3554db;
+    border: 1px solid #5876e8;
     background-color: #fff;
     border-radius: 20px;
     box-sizing: border-box;
@@ -949,14 +965,13 @@ h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #50555c;
   }
 
   .applist .list-txt p:first-child {
     font-weight: bold;
     font-size: 16px;
-    color: #333;
     line-height: 18px;
+    color: #c5cad6;
   }
 
   .applist .list-txt p:last-child {
