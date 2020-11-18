@@ -576,11 +576,12 @@ button.list-btn-update,
 
 .down {
 	display: inline-block;
-	width: 42px;
+	width: 60px;
 	background-image: url(../img/ic_down_dark.svg);
 	background-repeat: no-repeat;
 	background-position: 0 65%;
-	text-align: right;
+	text-align: left;
+	padding-left: 16px;
 }
 
 .down span {
