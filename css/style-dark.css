@@ -347,7 +347,7 @@ h2 {
 .applist .list-btn-open,
 button.list-btn-open {
 	color: #c5cad6;
-	padding: 4px 3px;
+	padding: 4px;
 	background-color: #272d3d;
 	border-radius: 20px;
 	box-sizing: border-box;
@@ -360,7 +360,7 @@ button.list-btn-open {
 .applist .list-btn-install,
 button.list-btn-install {
 	color: #191f2c;
-	padding: 4px 3px;
+	padding: 4px;
 	background-color: #5876e8;
 	border-radius: 20px;
 	box-sizing: border-box;
@@ -374,7 +374,7 @@ button.list-btn-install {
 button.list-btn-update,
 .btn-review {
 	color: #5876e8;
-	padding: 3px;
+	padding: 4px;
 	border: 1px solid #5876e8;
 	background-color: #191f2c;
 	border-radius: 20px;
@@ -880,7 +880,7 @@ h4 {
 @media only screen and (max-width: 320px) {
 	.wrap-content {
 		margin-top: 83px;
-		padding-bottom: 68px;
+		padding-bottom: 88px;
 	}
 
 	.wrap-page {
@@ -893,6 +893,15 @@ h4 {
 		width: 100%;
 		overflow-x: hidden;
 		height: auto;
+	}
+
+	.wrap-result {
+		position: fixed;
+		width: 100%;
+		padding: 0 40px 70px 0;
+		top: 170px;
+		height: 70%;
+		overflow-y: scroll;
 	}
 
 	.applist {
@@ -913,9 +922,9 @@ h4 {
 
 	.applist .list-btn-open,
 	button.list-btn-open {
-		color: #50555c;
-		padding: 4px 3px;
-		background-color: #eee;
+		color: #c5cad6;
+		padding: 3px;
+		background-color: #272d3d;
 		border-radius: 20px;
 		box-sizing: border-box;
 		width: 72px;
@@ -926,8 +935,8 @@ h4 {
 	}
 	.applist .list-btn-install,
 	button.list-btn-install {
-		color: #fff;
-		padding: 4px 3px;
+		color: #191f2c;
+		padding: 3px;
 		background-color: #5876e8;
 		border-radius: 20px;
 		box-sizing: border-box;
@@ -943,7 +952,7 @@ h4 {
 		color: #5876e8;
 		padding: 3px;
 		border: 1px solid #5876e8;
-		background-color: #fff;
+		background-color: #191f2c;
 		border-radius: 20px;
 		box-sizing: border-box;
 		width: 72px;
