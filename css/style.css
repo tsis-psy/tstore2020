@@ -25,6 +25,16 @@ input:focus {
 	outline: none;
 }
 
+input::-ms-input-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+input::-moz-placeholder {
+	color: #999;
+}
+
 button {
 	-webkit-appearance: none;
 	border: none;
@@ -40,6 +50,8 @@ select {
 	background-image: url(../img/ic_select.svg);
 	background-repeat: no-repeat;
 	background-position: 96% 50%;
+	line-height: 150%;
+	color: #999;
 }
 select:focus {
 	outline: none;
@@ -413,11 +425,11 @@ button.list-btn-update,
 	background-color: #fff;
 }
 
-.wrap-srch form input {
+.wrap-srch input {
 	position: relative;
 	width: 100%;
 }
-.wrap-srch form button {
+.wrap-srch button {
 	position: absolute;
 	top: 12px;
 	right: 10px;
