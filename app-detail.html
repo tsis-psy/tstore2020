@@ -1,144 +1,139 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    
-    <title>t-Store</title>
-</head>
-<body>
-    <div class="wrap-page-detail">
-        <div class="wrap-back">
-            <a href="index.html"></a>
-        </div>
-        
-            <div class="appinfo-header">
-                    <span class="icon"><img src="img/list_icon.png"></span>
-                    <span class="info">
-                        <p class="tit">Smart Office</p>
-                        <p class="subtit">태광그룹 모바일 그룹웨어 그룹웨어rmfnaklda</p>
-                        <div class="star">
-                            <span class="blue"></span>
-                            <span class="blue"></span>
-                            <span class="blue"></span>
-                            <span class="blue"></span>
-                            <span class="gray"></span>
-                        </div>
-                        <div class="down">
-                            <span>700</span>
-                        </div>
-                        <button class="list-btn-update">업데이트</button>
-                    </span>
-                    
-            </div>
-        <a href="preview.html">
-        <div class="wrap-detail-preview">
-                <div><img src="img/preview-b-1.png"></div>
-                <div><img src="img/preview-b-2.png"></div>
-                <div><img src="img/preview-b-3.png"></div>
-                <div><img src="img/preview-b-2.png"></div>
-                <div><img src="img/preview-b-3.png"></div>
-        </div>
-        </a>    
-        <div class="wrap-detail">
-            <h2>상세정보</h2>
-            <p>태광그룹 모바일 그룹웨어</p>
-            <h2>새로운 기능</h2>
-            <div class="wrap-version">
-            <span>버전 1.6.2</span>
-            <span class="version-date">2020-05-26</span>
-        </div>
-            <p>기타 버그 수정</p>
-        
-            <div class="review-header">
-                <h2>리뷰</h2>
-                <button id="myBtn" class="btn-review">리뷰쓰기</button>
-            </div>
-            <div class="review-list">
-                <div class="review-content">
-                    <span class="review-txt">너무너무 편리합니다. 꼭 설치해서 사용해보세요</span>
-                    <span class="review-date">2020-04-22</span>
-                </div>
-                <div class="star">
-                    <span class="blue"></span>
-                    <span class="blue"></span>
-                    <span class="blue"></span>
-                    <span class="blue"></span>
-                    <span class="gray"></span>
-                </div>
-                <div class="review-content">
-                    <span class="review-txt">너무너무 편리합니다. 꼭 설치해서 사용해보세요</span>
-                    <span class="review-date">2020-04-22</span>
-                </div>
-                <div class="star">
-                    <span class="blue"></span>
-                    <span class="blue"></span>
-                    <span class="blue"></span>
-                    <span class="blue"></span>
-                    <span class="gray"></span>
-                </div>
-            </div>
-            <div id="myModal" class="wrap-modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="wrap-review">
-                        <h3>리뷰 작성하기</h3>
-                        <p>앱에 대한 만족도 만큼 별을 탭해서<br>평가해주세요.</p>
-                        <div class="rating">
-                            <span class="fill"></span>
-                            <span class="fill"></span>
-                            <span class="blank"></span>
-                            <span class="blank"></span>
-                            <span class="blank"></span>
-                        </div>
-                        <form>
-                            <textarea placeholder="리뷰 내용을 입력해주세요."></textarea>
-                            <div class="wrap-button">
-                                <button class="cancel">취소</button>
-                                <button class="complete">작성완료</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
 
-        </div>
-    </div>
-    
-    <script>
-        // Get the modal
-var modal = document.getElementById("myModal");
+		<title>t-Store</title>
+	</head>
+	<body>
+		<div class="wrap-page-detail">
+			<div class="wrap-back">
+				<a href="index.html"></a>
+			</div>
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+			<div class="appinfo-header">
+				<span class="icon"><img src="img/list_icon.png" /></span>
+				<span class="info">
+					<p class="tit">Smart Office</p>
+					<p class="subtit">태광그룹 모바일 그룹웨어 그룹웨어rmfnaklda</p>
+					<div class="star">
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="gray"></span>
+					</div>
+					<div class="down">
+						<span>700</span>
+					</div>
+					<button class="list-btn-update">업데이트</button>
+				</span>
+			</div>
+			<a href="preview.html">
+				<div class="wrap-detail-preview">
+					<div><img src="img/preview-b-1.png" /></div>
+					<div><img src="img/preview-b-2.png" /></div>
+					<div><img src="img/preview-b-3.png" /></div>
+					<div><img src="img/preview-b-2.png" /></div>
+					<div><img src="img/preview-b-3.png" /></div>
+				</div>
+			</a>
+			<div class="wrap-detail">
+				<h2>상세정보</h2>
+				<p>태광그룹 모바일 그룹웨어</p>
+				<h2>새로운 기능</h2>
+				<div class="wrap-version">
+					<span>버전 1.6.2</span>
+					<span class="version-date">2020-05-26</span>
+				</div>
+				<p>기타 버그 수정</p>
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+				<div class="review-header">
+					<h2>리뷰</h2>
+					<button id="myBtn" class="btn-review">리뷰쓰기</button>
+				</div>
+				<div class="review-list">
+					<div class="review-content">
+						<span class="review-txt">너무너무 편리합니다. 꼭 설치해서 사용해보세요</span>
+						<span class="review-date">2020-04-22</span>
+					</div>
+					<div class="star">
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="gray"></span>
+					</div>
+					<div class="review-content">
+						<span class="review-txt">너무너무 편리합니다. 꼭 설치해서 사용해보세요</span>
+						<span class="review-date">2020-04-22</span>
+					</div>
+					<div class="star">
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="blue"></span>
+						<span class="gray"></span>
+					</div>
+				</div>
+				<div id="myModal" class="wrap-modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<div class="wrap-review">
+							<h3>리뷰 작성하기</h3>
+							<p>앱에 대한 만족도 만큼 별을 탭해서<br />평가해주세요.</p>
+							<div class="rating">
+								<span class="fill"></span>
+								<span class="fill"></span>
+								<span class="blank"></span>
+								<span class="blank"></span>
+								<span class="blank"></span>
+							</div>
+							<form>
+								<textarea placeholder="리뷰 내용을 입력해주세요."></textarea>
+								<div class="wrap-button">
+									<button class="cancel">취소</button>
+									<button class="complete">작성완료</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-  document.body.classList.add("stop-scroll");
-}
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-  document.body.classList.remove("stop-scroll");
-}
+			// Get the button that opens the modal
+			var btn = document.getElementById('myBtn');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    document.body.classList.remove("stop-scroll");
-  }
-}
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName('close')[0];
 
-    </script>
+			// When the user clicks the button, open the modal
+			btn.onclick = function () {
+				modal.style.display = 'block';
+				document.body.classList.add('stop-scroll');
+			};
 
-</body>
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function () {
+				modal.style.display = 'none';
+				document.body.classList.remove('stop-scroll');
+			};
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = 'none';
+					document.body.classList.remove('stop-scroll');
+				}
+			};
+		</script>
+	</body>
 </html>
