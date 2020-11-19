@@ -35,6 +35,30 @@ input::-moz-placeholder {
 	color: #999;
 }
 
+input[type='text']::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type='text']::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+input[type='search']::-webkit-search-decoration {
+	display: none;
+}
+input[type='search']::-webkit-search-cancel-button {
+	display: none;
+}
+input[type='search']::-webkit-search-results-button {
+	display: none;
+}
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
+
 button {
 	-webkit-appearance: none;
 	border: none;
@@ -518,7 +542,6 @@ button.list-btn-update,
 }
 .appinfo-header .info {
 	display: inline-block;
-	width: 40vw;
 	position: absolute;
 	top: 0;
 }
@@ -540,7 +563,7 @@ button.list-btn-update,
 	width: 52vw;
 }
 .star {
-	padding-right: 10px;
+	padding-right: 6px;
 	display: inline-block;
 }
 .star span.blue {
@@ -564,12 +587,13 @@ button.list-btn-update,
 
 .down {
 	display: inline-block;
-	width: 60px;
+	width: 52px;
 	background-image: url(../img/ic_down.svg);
 	background-repeat: no-repeat;
 	background-position: 0 65%;
 	text-align: left;
-	padding-left: 16px;
+	padding-left: 14px;
+	font-size: 13px;
 }
 
 .down span {
@@ -985,5 +1009,10 @@ h4 {
 		padding-top: 5px;
 		font-size: 13px;
 		letter-spacing: -0.6px;
+	}
+
+	.appinfo-header .icon img {
+		width: 108px;
+		border-radius: 24px;
 	}
 }
