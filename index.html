@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <title>t-Store</title>
     </head>
     <body>
@@ -13,13 +14,13 @@
                 <h1>t.Store</h1>
             </div>
             <div class="wrap-content">
-                <div class="ban">
-                    <ul class="slider-container">
-                        <li class="slide"><img src="img/ban-gw.svg" /></li>
-                        <li class="slide"><img src="img/ban-jungdo.svg" /></li>
-                        <li class="slide"><img src="img/ban-tlink.svg" /></li>
-                    </ul>
-                    <p class="pager"></p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/ban-gw.svg" /></div>
+                        <div class="swiper-slide"><img src="img/ban-jungdo.svg" /></div>
+                        <div class="swiper-slide"><img src="img/ban-tlink.svg" /></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="wrap-list">
                     <div class="list-header">
@@ -92,60 +93,21 @@
             </div>
         </div>
 
+        <!-- Swiper JS -->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
         <script>
-            // 변수지정
-            var $slideWrap = document.querySelector('.ban'),
-                $slideContainer = document.querySelector('.slider-container'),
-                $slide = document.querySelectorAll('.slide'),
-                $slideHeight = 0,
-                $currentIndex = 0,
-                $timer,
-                $pagerHTML = '',
-                $pager = document.querySelector('.pager'),
-                $slideCount = $slide.length;
-
-            $slideWrap.style.height = $slideHeight + 'px';
-            $slideContainer.style.height = $slideHeight + 'px';
-
-            // 슬라이드가 있으면 가로로 배열하가
-            for (var a = 0; a < $slideCount; a++) {
-                $slide[a].style.left = a * 100 + '%';
-                //<span data-idx="0">1</span>
-                $pagerHTML += '<span data-idx="' + a + '"></span>';
-                $pager.innerHTML = $pagerHTML;
-            }
-
-            $pagerBtn = document.querySelectorAll('.pager span');
-
-            // 슬라이드 이동 함수
-            function goToSlide(idx) {
-                $slideContainer.classList.add('animated');
-                $slideContainer.style.left = -100 * idx + '%';
-                $currentIndex = idx;
-
-                //클릭된 요소에 active 추가
-                for (var y = 0; y < $pagerBtn.length; y++) {
-                    $pagerBtn[y].classList.remove('active');
-                }
-                $pagerBtn[idx].classList.add('active');
-            }
-
-            goToSlide(0);
-
-            // 자동슬라이드
-
-            setInterval(function () {
-                var nextIdx = ($currentIndex + 1) % $slideCount;
-                goToSlide(nextIdx);
-            }, 3000);
-
-            //pager로 슬라이드 이동
-            for (var x = 0; x < $pagerBtn.length; x++) {
-                $pagerBtn[x].addEventListener('click', function (event) {
-                    var pagerNum = event.target.getAttribute('data-idx');
-                    goToSlide(pagerNum);
-                });
-            }
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+            });
         </script>
     </body>
 </html>
+
