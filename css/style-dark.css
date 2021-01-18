@@ -186,6 +186,41 @@ h2 {
     color: #fff;
 }
 
+.wrap-tit-ic {
+    width: 100%;
+    padding: 30px 23px 20px 56px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    z-index: 998;
+}
+
+.setting-ic {
+    background-image: url(../img/setting_on_dark.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 60%;
+}
+
+.notice-ic {
+    background-image: url(../img/notice_on_dark.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 60%;
+}
+
+.myapp-ic {
+    background-image: url(../img/myapp_on_dark.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 60%;
+}
+
+.search-ic {
+    background-image: url(../img/search_on_dark.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 60%;
+}
+
 .wrap-tit,
 .wrap-back {
     width: 100%;
