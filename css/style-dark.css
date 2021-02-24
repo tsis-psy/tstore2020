@@ -11,7 +11,7 @@
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
   -webkit-touch-callout: none;
-  -webkit-user-select: auto;
+  -webkit-user-select: none;
 }
 
 body {
@@ -27,6 +27,7 @@ input {
   font-size: 16px;
   background-color: #191f2c;
   color: #7b8496;
+  -webkit-user-select: auto;
 }
 
 input:focus {
