@@ -11,7 +11,7 @@
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
+  -webkit-user-select: auto;
 }
 
 body {
