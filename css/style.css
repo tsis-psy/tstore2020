@@ -793,6 +793,7 @@ button.list-btn-update,
   -webkit-appearance: none;
   outline: none;
   border: 1px solid #e5e5e5;
+  -webkit-user-select: auto;
 }
 
 .wrap-button {

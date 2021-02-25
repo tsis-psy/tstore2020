@@ -809,6 +809,7 @@ button.list-btn-update,
   outline: none;
   border: 1px solid #3a404b;
   background-color: #191f2c;
+  -webkit-user-select: auto;
 }
 
 .wrap-button {
