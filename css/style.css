@@ -944,6 +944,11 @@ h4 {
 	color: #9d9d9d;
 }
 
+.qna b {
+	width: 130px;
+	display: inline-block;
+}
+
 /*--- IPHONE 5 - SE ---*/
 @media only screen and (max-width: 320px) {
 	.wrap-content {
